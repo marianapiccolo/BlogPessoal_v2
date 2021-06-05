@@ -8,7 +8,7 @@ import com.blog.viagens.model.Tema;
 
 
 public interface TemaRepository extends JpaRepository<Tema, Long> {
-			public List<Tema> findAllByTemaContainingIgnoreCase (String tema);
+			public List<Tema> findAllByDescricaoContainingIgnoreCase (String descricao);
 
 
 	}
